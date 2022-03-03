@@ -1,4 +1,4 @@
-"Name","FIPS","StateName"," TotalPop ","Health Service Area Number","Health Service Area Name","COVID inpatient bed utilization","COVID hospital admissions per 100k","COVID cases per 100k","COVID-19 Community Level"
+"County","FIPS","StateName"," TotalPop ","Health Service Area Number","Health Service Area Name","COVID inpatient bed utilization","COVID hospital admissions per 100k","COVID cases per 100k","COVID-19 Community Level"
 "Alameda County","06001","California","1,671,329","0766","Alameda (Oakland), CA - Contra Costa, CA","5.60%","7.4","279.24","Medium"
 "Alpine County","06003","California","1,129","0701","Washoe (Reno), NV - Carson City, NV","5.60%","5.6","88.57","Low"
 "Amador County","06005","California","39,752","0750","San Joaquin (Stockton), CA - Calaveras, CA","10.30%","12.1","246.53","High"
