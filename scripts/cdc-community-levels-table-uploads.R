@@ -28,4 +28,4 @@ write.csv(cdc_community_levels_us_df, "cdc_community_levels_us_df.csv", row.name
 cdc_community_levels_ca_df <- cdc_community_levels_us_df %>% 
   filter(State == "California")
 
-write.csv(cdc_community_levels_us_df, "cdc_community_levels_ca_df.csv", row.names = FALSE)
+write.csv(cdc_community_levels_ca_df, "cdc_community_levels_ca_df.csv", row.names = FALSE)
