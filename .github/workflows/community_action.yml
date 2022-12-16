@@ -1,0 +1,25 @@
+on:
+    schedule:
+     - cron: '5 20,23 * * 5'
+    workflow_dispatch:
+
+name: Community Levels
+
+env:
+  
+jobs:
+  render:
+    name: Pull latest data into a csv
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: r-lib/actions/setup-r@v1
+      - name: Install dependencies and packages
+        run: Rscript -e 'install.packages(c("tidyverse","stringr"))'
+      - name: Get CDC data
+        run: Rscript scripts/cdc-community-levels-table-uploads.R
+      - name: Commit results
+        run: |
+          git add -A
+          git commit -m 'Update community levels' || echo "No changes"
+          git push origin || echo "No changes to commit"
